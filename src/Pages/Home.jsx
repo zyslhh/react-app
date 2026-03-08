@@ -20,7 +20,7 @@ function Home() {
       setGoodsitem(data.data.explosiveMoney);
     });
     plusReady(() => {
-      plus.navigator.setStatusBarBackground("#e93323");
+      window.plus?.navigator?.setStatusBarBackground("#e93323");
     });
   }, []);
   function sendIndex(index) {

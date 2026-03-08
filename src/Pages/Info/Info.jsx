@@ -87,7 +87,7 @@ const Info = () => {
         setShow(true)
       }
       plusReady(() => {
-        plus.navigator.setStatusBarBackground('#e93323');
+        window.plus?.navigator?.setStatusBarBackground('#e93323');
       })
     }, [])
 
@@ -243,7 +243,7 @@ const Info = () => {
             onCancel={() => setVisible(false)}
             onSelect={async ({ id, name }) => {
               plusReady(() => {
-                plus.share.getServices((services) => {
+                window.plus?.share?.getServices((services) => {
                   services.forEach(item => {
                     serverList[item.id] = item
                   })

@@ -12,6 +12,7 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@react-vant/icons": "^0.1.0",
     "@vant/area-data": "^2.0.0",
     "axios": "^1.7.7",
     "postcss-px-to-viewport": "^1.1.1",

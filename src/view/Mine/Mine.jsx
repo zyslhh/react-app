@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Cell, Image, Loading, Swiper, Badge } from "react-vant";
+import { Cell, Image, Loading, Swiper, Badge, Toast } from "react-vant";
 import {
   Arrow,
   PendingPayment,
@@ -65,7 +65,7 @@ function Mine() {
     });
 
     plusReady(() => {
-      plus.navigator.setStatusBarBackground("#e93323");
+      window.plus?.navigator?.setStatusBarBackground("#e93323");
     });
   }, []);
   useEffect(() => {

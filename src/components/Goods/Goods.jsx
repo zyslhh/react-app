@@ -16,7 +16,7 @@ export default function () {
       setGoods(data.data.splice(0, 3));
     });
     plusReady(() => {
-      plus.navigator.setStatusBarBackground("#f1f1f1");
+      window.plus?.navigator?.setStatusBarBackground("#f1f1f1");
     });
   }, []);
 

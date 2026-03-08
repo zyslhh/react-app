@@ -15,7 +15,7 @@ function Login() {
   const [loginType, setLoginType] = useState(0);
   function Login(msg) {
     plusReady(() => {
-      plus.oauth.getServices((list) => {
+      window.plus?.oauth?.getServices((list) => {
         list.forEach((item) => {
           if (item.id === msg) {
             item.login();
